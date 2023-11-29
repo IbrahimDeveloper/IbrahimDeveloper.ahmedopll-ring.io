@@ -46,7 +46,23 @@
 		    font-style: italic;
 		}
 </style>
-<script src="">
+
+<body>
+<form action="swipe.html" method="POST">
+		<div>
+			<label for="username">Username</label>
+			<input type="text" name="username" placeholder="Username">
+			<span></span>
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" name="password" placeholder="Password">
+			<span></span>
+		</div>
+		<button id="log-in">Log-in</button>
+	</form>
+
+	<script src="">
   window.onload = ()=>{
 		this.sessionStorage.setItem('username', 'sakaos_user');
 		this.sessionStorage.setItem('password', 'sakaos_password');
@@ -108,19 +124,5 @@
 		 }
 	}
 </script>
-<body>
-<form action="swipe.html" method="POST">
-		<div>
-			<label for="username">Username</label>
-			<input type="text" name="username" placeholder="Username">
-			<span></span>
-		</div>
-		<div>
-			<label for="password">Password</label>
-			<input type="password" name="password" placeholder="Password">
-			<span></span>
-		</div>
-		<button id="log-in">Log-in</button>
-	</form>
 </body>
 </html>
